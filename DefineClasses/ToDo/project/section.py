@@ -1,5 +1,6 @@
 import unittest
 
+
 class Section:
 
     def __init__(self, name):
@@ -37,6 +38,7 @@ class TestSection(unittest.TestCase):
 
     def test_all_param_is_set_correct(self):
         self.assertEqual(self.sec.name, 'first section')
+
 
 if __name__ == '__main__':
     unittest.main()

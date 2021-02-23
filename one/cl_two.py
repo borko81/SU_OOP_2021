@@ -1,7 +1,7 @@
 try:
     from one.cl_one import One
-except:
-    from cl_one import One
+except ModuleNotFoundError:
+    from .cl_one import One
 
 
 class Two:
