@@ -1,3 +1,5 @@
+# Section class
+
 class Section:
 
     def __init__(self, name):
@@ -27,7 +29,3 @@ class Section:
         for task in self.tasks:
             result += f'{task.details()}\n'
         return result
-
-
-if __name__ == '__main__':
-    pass

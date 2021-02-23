@@ -1,5 +1,3 @@
-import unittest
-
 class Task:
 
     def __init__(self, name: str, due_date: str):
@@ -60,6 +58,4 @@ class Task:
 #     def test_details(self):
 #         self.assertEqual(self.task.details(), f"Name: {self.task.name} - Due Date: {self.task.due_date}")
 
-if __name__ == '__main__':
-    unittest.main()
 
