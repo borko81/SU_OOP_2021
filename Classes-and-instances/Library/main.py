@@ -1,5 +1,6 @@
-from project.library import Library
 from project.user import User
+from project.library import Library
+
 
 user = User(12, 'Peter')
 library = Library()
@@ -31,7 +32,6 @@ user.return_book('J.K.Rowling', 'The Deathly Hallows', library)
 print(library.books_available)
 print(library.rented_books)
 print(user.books)
-
 
 
 '''
