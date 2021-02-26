@@ -1,5 +1,5 @@
-from project.hotel import Hotel
-from project.room import Room
+from Hotel.hotel import Hotel
+from Hotel.room import Room
 import unittest
 from unittest import mock
 
