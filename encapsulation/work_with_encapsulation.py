@@ -15,6 +15,7 @@ class Derived(Base):
         print("Calling protected member of base class: ")
         print(self._a)
 
+    # maybe statatic
     def show_c(self):
         return super().show_c()
 
@@ -37,3 +38,4 @@ if __name__ == "__main__":
     proba = Hidden_Attribute("password")
     proba.password = 'Pass'
     print(proba.password)
+
