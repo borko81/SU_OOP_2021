@@ -15,6 +15,7 @@ class Derived(Base):
         print("Calling protected member of base class: ")
         print(self._a)
 
+    # maybe statatic
     def show_c(self):
         return super().show_c()
 
@@ -33,6 +34,7 @@ class Hidden_Attribute:
         self.__password = value
 
 
+# class UserProfile
 class UserProfile:
 
     EMAIL_SUFFIX = "@mymail.com"
@@ -76,6 +78,7 @@ class UserProfile:
 
 
 if __name__ == "__main__":
+<<<<<<< HEAD
     user_one = UserProfile("john", "Adams")
     user_two = UserProfile.profile_from_string("first last")
 
@@ -84,3 +87,9 @@ if __name__ == "__main__":
     print("-" * 20)
     print(user_two)
     print(user_two.email)
+=======
+    proba = Hidden_Attribute("password")
+    proba.password = 'Pass'
+    print(proba.password)
+
+>>>>>>> c52ae77e6c5d27bcbbc59e6147fe3b7fdf8f406e
