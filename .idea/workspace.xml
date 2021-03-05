@@ -2,10 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6aa94b3b-3357-4089-b988-ba639210763a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/inheritance/People/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inheritance/People/project/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inheritance/People/project/child.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inheritance/People/project/person.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inheritance/zoo/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inheritance/zoo/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inheritance/zoo/project/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inheritance/zoo/project/animal.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inheritance/zoo/project/bear.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inheritance/zoo/project/gorilla.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inheritance/zoo/project/lizard.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inheritance/zoo/project/mammal.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inheritance/zoo/project/reptile.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inheritance/zoo/project/snake.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/SU_OOP_2021.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SU_OOP_2021.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -118,7 +124,7 @@
       <pane id="Scope" />
     </panes>
   </component>
-  <component name="RunManager" selected="Python.child">
+  <component name="RunManager" selected="Python.main">
     <configuration name="child" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="SU_OOP_2021" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -140,26 +146,33 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="SU_OOP_2021" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/inheritance/zoo" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/inheritance/zoo/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Unittests for main.Tests (1)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="SU_OOP_2021" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/encapsulation/pizza" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;main.Tests&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests for main.Tests" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="SU_OOP_2021" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/encapsulation/wild_card_zoo" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
@@ -198,11 +211,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main" />
         <item itemvalue="Python.child" />
         <item itemvalue="Python tests.Unittests for main.Tests (1)" />
         <item itemvalue="Python tests.Unittests for main.Tests.test_pizza_add_topping_update" />
         <item itemvalue="Python tests.Unittests for main.Tests.test_topping_init" />
-        <item itemvalue="Python tests.Unittests for main.Tests" />
       </list>
     </recent_temporary>
   </component>
