@@ -49,7 +49,7 @@ class Pizza:
             self.toppings[topping.topping_type] += topping.weight
 
     def calculate_total_weight(self):
-        total = 0
+        total = self.dough.weight
         for _, value in self.__toppings.items():
             total += value
         return total

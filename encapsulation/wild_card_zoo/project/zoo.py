@@ -1,5 +1,7 @@
 class Zoo:
 
+    __slots__ = 'name, __budget, __animal_capacity, __workers_capacity, animals, workers'.split(', ')
+
     def __init__(self, name, budget, animal_capacity, workers_capacity):
         self.name = name
         self.animals = []
@@ -9,15 +11,15 @@ class Zoo:
         self.__workers_capacity = workers_capacity
 
     def add_animal(self, animal, price):
-        if self.__budget >= price and self.__animal_capacity > len(self.animals):
-            self.animals.append(animal)
-            self.__budget -= price
-            return f'{animal.name} the {animal.__class__.__name__} added to the zoo'
-
-        elif self.__budget < price:
+        if self.__budget < price:
             return 'Not enough budget'
 
-        return 'Not enough space for animal'
+        if self.__animal_capacity <= len(self.animals):
+            return 'Not enough space for animal'
+
+        self.animals.append(animal)
+        self.__budget -= price
+        return f'{animal.name} the {animal.__class__.__name__} added to the zoo'
 
     def hire_worker(self, worker):
         if self.__workers_capacity <= len(self.workers):
@@ -42,20 +44,24 @@ class Zoo:
         return f"You payed your workers. They are happy. Budget left: {self.__budget}"
 
     def tend_animals(self):
-        amount_to_pay = sum([animal.get_needs() for animal in self.animals])
-        if self.__budget >= amount_to_pay:
-            self.__budget -= amount_to_pay
-            return f'You tended all the animals. They are happy. Budget left: {self.__budget}'
+        amount_to_pay = sum((animal.get_needs() for animal in self.animals))
+        if self.__budget < amount_to_pay:
+            return 'You have no budget to tend the animals. They are unhappy.'
 
-        return 'You have no budget to tend the animals. They are unhappy.'
+        self.__budget -= amount_to_pay
+        return f'You tended all the animals. They are happy. Budget left: {self.__budget}'
 
     def profit(self, amount):
         self.__budget += amount
 
+    @staticmethod
+    def __get_animal_type_list(where_to_search, animal_name):
+        return [animal for animal in where_to_search if animal.__class__.__name__ == animal_name]
+
     def animals_status(self):
-        lions = [animal for animal in self.animals if animal.__class__.__name__ == 'Lion']
-        tigers = [animal for animal in self.animals if animal.__class__.__name__ == 'Tiger']
-        cheetahs = [animal for animal in self.animals if animal.__class__.__name__ == 'Cheetah']
+        lions = self.__get_animal_type_list(self.animals, 'Lion')
+        tigers = self.__get_animal_type_list(self.animals, 'Tiger')
+        cheetahs = self.__get_animal_type_list(self.animals, 'Cheetah')
 
         result = f"You have {len(self.animals)} animals\n"
         result += f"----- {len(lions)} Lions:\n"
@@ -67,9 +73,9 @@ class Zoo:
         return result
 
     def workers_status(self):
-        keepers = [animal for animal in self.workers if animal.__class__.__name__ == 'Keeper']
-        caretaker = [animal for animal in self.workers if animal.__class__.__name__ == 'Caretaker']
-        vets = [animal for animal in self.workers if animal.__class__.__name__ == 'Vet']
+        keepers = self.__get_animal_type_list(self.workers, 'Keeper')
+        caretaker = self.__get_animal_type_list(self.workers,'Caretaker')
+        vets = self.__get_animal_type_list(self.workers,'Vet')
 
         result = f"You have {len(self.workers)} workers\n"
         result += f"----- {len(keepers)} Keepers:\n"
