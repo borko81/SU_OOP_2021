@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="60e19b51-0b12-4340-a961-7a5e528a1e94" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/encapsulation/pizza/main.py" afterDir="false" />
+    <list default="true" id="6aa94b3b-3357-4089-b988-ba639210763a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/inheritance/People/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inheritance/People/project/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inheritance/People/project/child.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inheritance/People/project/person.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/SU_OOP_2021.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SU_OOP_2021.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/encapsulation/pizza/project/pizza.py" beforeDir="false" afterPath="$PROJECT_DIR$/encapsulation/pizza/project/pizza.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/encapsulation/wild_card_zoo/project/zoo.py" beforeDir="false" afterPath="$PROJECT_DIR$/encapsulation/wild_card_zoo/project/zoo.py" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -118,19 +118,28 @@
       <pane id="Scope" />
     </panes>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Python tests.Unittests for main.Tests (1)">
+  <component name="RunManager" selected="Python.child">
+    <configuration name="child" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="SU_OOP_2021" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/inheritance/People/project" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/inheritance/People/project/child.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Unittests for main.Tests (1)" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="SU_OOP_2021" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -187,27 +196,13 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for main.Tests.test_zoo_tend_animal_success" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="SU_OOP_2021" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/encapsulation/wild_card_zoo" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;main.Tests.test_zoo_tend_animal_success&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.child" />
         <item itemvalue="Python tests.Unittests for main.Tests (1)" />
         <item itemvalue="Python tests.Unittests for main.Tests.test_pizza_add_topping_update" />
         <item itemvalue="Python tests.Unittests for main.Tests.test_topping_init" />
         <item itemvalue="Python tests.Unittests for main.Tests" />
-        <item itemvalue="Python tests.Unittests for main.Tests.test_zoo_tend_animal_success" />
       </list>
     </recent_temporary>
   </component>
@@ -278,6 +273,18 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/encapsulation/wild_card_zoo/main.py">
