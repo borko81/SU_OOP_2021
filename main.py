@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # zero test
 from project.product import Product
 from project.beverage.beverage import Beverage
@@ -25,3 +26,5 @@ class Tests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+=======
+>>>>>>> f792c39bc399e338f8f97a86b883ecf8ad0aac8a
