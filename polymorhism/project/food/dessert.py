@@ -1,4 +1,4 @@
-from project.food.food import Food
+from polymorhism.project.food.food import Food
 
 
 class Dessert(Food):

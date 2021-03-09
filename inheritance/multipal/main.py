@@ -1,9 +1,9 @@
 # test person
 import unittest
 
-from project.employee import Employee
-from project.person import Person
-from project.teacher import Teacher
+from polymorhism.project import Employee
+from polymorhism.project import Person
+from polymorhism.project import Teacher
 
 
 class Tests(unittest.TestCase):

@@ -1,10 +1,10 @@
-from project.lion import Lion
-from project.tiger import Tiger
-from project.cheetah import Cheetah
-from project.keeper import Keeper
-from project.vet import Vet
-from project.caretaker import Caretaker
-from project.zoo import Zoo
+from polymorhism.project import Lion
+from polymorhism.project import Tiger
+from polymorhism.project import Cheetah
+from polymorhism.project import Keeper
+from polymorhism.project import Vet
+from polymorhism.project import Caretaker
+from polymorhism.project import Zoo
 
 import unittest
 

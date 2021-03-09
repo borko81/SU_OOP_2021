@@ -1,5 +1,5 @@
-from project.employee import Employee
-from project.person import Person
+from polymorhism.project import Employee
+from polymorhism.project import Person
 
 
 class Teacher(Person, Employee):

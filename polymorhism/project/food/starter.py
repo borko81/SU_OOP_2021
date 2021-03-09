@@ -1,6 +1,6 @@
-from project.food.starter import Starter
+from polymorhism.project.food.food import Food
 
 
-class Soup(Starter):
+class Starter(Food):
     def __init__(self, name, price, grams):
         super().__init__(name, price, grams)

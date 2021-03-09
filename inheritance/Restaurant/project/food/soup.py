@@ -1,4 +1,4 @@
-from project.food.starter import Starter
+from polymorhism.project.food import Starter
 
 
 class Soup(Starter):

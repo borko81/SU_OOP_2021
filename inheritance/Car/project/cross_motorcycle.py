@@ -1,4 +1,4 @@
-from project.motorcycle import Motorcycle
+from polymorhism.project import Motorcycle
 
 
 class CrossMotorcycle(Motorcycle):

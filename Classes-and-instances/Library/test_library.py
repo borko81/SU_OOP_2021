@@ -1,7 +1,7 @@
 import unittest
 
-from project.library import Library
-from project.user import User
+from polymorhism.project import Library
+from polymorhism.project import User
 
 
 class TestLibrary(unittest.TestCase):

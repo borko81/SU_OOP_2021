@@ -1,4 +1,4 @@
-from project.food.dessert import Dessert
+from polymorhism.project.food.dessert import Dessert
 
 
 class Cake(Dessert):

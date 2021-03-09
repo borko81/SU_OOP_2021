@@ -1,8 +1,8 @@
 import unittest
 
-from project.dough import Dough
-from project.pizza import Pizza
-from project.topping import Topping
+from polymorhism.project import Dough
+from polymorhism.project import Pizza
+from polymorhism.project import Topping
 
 
 class Tests(unittest.TestCase):

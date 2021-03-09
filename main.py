@@ -1,8 +1,8 @@
 <<<<<<< HEAD
 # zero test
-from project.product import Product
-from project.beverage.beverage import Beverage
-from project.food.soup import Soup
+from polymorhism.project.product import Product
+from polymorhism.project.beverage.beverage import Beverage
+from polymorhism.project.food.soup import Soup
 import unittest
 
 class Tests(unittest.TestCase):
