@@ -1,3 +1,6 @@
+import unittest
+
+
 class Account:
 
     def __init__(self, owner, amount=0):
@@ -57,29 +60,45 @@ class Account:
     def __ne__(self, other):
         return self.balance != other.balance
 
-if __name__ == '__main__':
-    acc = Account('bob', 10)
-    acc2 = Account('john')
-    print(acc)
-    print(repr(acc))
-    acc.add_transaction(20)
-    acc.add_transaction(-20)
-    acc.add_transaction(30)
-    print(acc.balance)
-    print(len(acc))
-    for transaction in acc:
-        print(transaction)
-    print(acc[1])
-    print(list(reversed(acc)))
-    acc2.add_transaction(10)
-    acc2.add_transaction(60)
-    print(acc > acc2)
-    print(acc >= acc2)
-    print(acc < acc2)
-    print(acc <= acc2)
-    print(acc == acc2)
-    print(acc != acc2)
-    acc3 = acc + acc2
-    print(acc3)
-    print(acc3._transactions)
 
+class TestAccount(unittest.TestCase):
+    def setUp(self):
+        self.acc_one = Account('Bob', 100)
+        self.acc_one.add_transaction(100)
+        self.acc_two = Account('John', 150)
+        self.acc_two.add_transaction(100)
+
+    def test_set_up_correct(self):
+        self.assertEqual(self.acc_one.owner, 'Bob')
+        self.assertEqual(self.acc_two.owner, 'John')
+        self.assertEqual(self.acc_one.amount, 100)
+        self.assertEqual(self.acc_two.amount, 150)
+
+    def test_add_one_account_to_other(self):
+        acc = Account(self.acc_one.owner + '&' + self.acc_two.owner, amount=self.acc_one.amount + self.acc_two.amount)
+        acc._transactions.extend(self.acc_one._transactions + self.acc_two._transactions)
+        self.assertEqual(acc.amount, 250)
+        self.assertEqual(acc._transactions, [100, 100])
+
+    def test_balance(self):
+        self.assertEqual(self.acc_one.balance, 200)
+        self.assertEqual(self.acc_two.balance, 250)
+
+    def test_validate_is_static_method(self):
+        acquire = type(Account.validate_transaction)
+        self.assertEqual(acquire.__name__, 'function')
+
+    def test_validate_is_not_ok_shoudl_raise_exception(self):
+        with self.assertRaises(Exception) as ex:
+            Account.validate_transaction(self.acc_one, -101)
+        self.assertEqual(str(ex.exception), 'sorry cannot go in debt!')
+
+    def test_validate_is_ok_inrese_amount(self):
+        Account.validate_transaction(self.acc_one, 100)
+        self.assertEqual(self.acc_one._transactions, [100, 100])
+
+
+if __name__ == '__main__':
+    acc = Account('Bob', 100)
+    # print(type(Account.validate_transaction))
+    unittest.main()
