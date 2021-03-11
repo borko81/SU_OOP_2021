@@ -1,5 +1,11 @@
 from polymorhism.pol_testing.abc_class import Abstract
-import unittest
+
+
+class ShowInfo:
+
+    @staticmethod
+    def show_info(name, price):
+        return "[+] User: %s has sallary %d" % (name, price)
 
 
 class User(Abstract):
@@ -15,21 +21,13 @@ class User(Abstract):
         return self.__class__.PRICE
 
 
-class TestUser(unittest.TestCase):
-    def setUp(self):
-        self.user = User('test', 39)
-
-    def test_all_corect_set_up(self):
-        self.assertEqual(self.user.name, 'test')
-        self.assertEqual(self.user.age, 39)
-        self.assertEqual(self.user.PRICE, 100)
-
-    def test_parent_class(self):
-        self.assertTrue(issubclass(User, Abstract))
+class VipUser(User, ShowInfo):
+    def show_price(self):
+        return self.__class__.PRICE * 10
 
 
 if __name__ == '__main__':
-    user = User('test', 39)
+    user = VipUser('test', 39)
     print(user.show_name_capitalize())
     print(user.show_price())
-    unittest.main()
+    print(user.show_info(user.name, user.show_price()))
