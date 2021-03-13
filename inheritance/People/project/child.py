@@ -1,4 +1,4 @@
-from project.person import Person
+from polymorhism.project import Person
 
 
 class Child(Person):

@@ -1,4 +1,4 @@
-from project.mammal import Mammal
+from polymorhism.project import Mammal
 
 
 class Gorilla(Mammal):

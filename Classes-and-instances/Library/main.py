@@ -1,5 +1,5 @@
-from project.user import User
-from project.library import Library
+from polymorhism.project import User
+from polymorhism.project import Library
 
 
 user = User(12, 'Peter')
