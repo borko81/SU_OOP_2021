@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6aa94b3b-3357-4089-b988-ba639210763a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/inheritance/zoo/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inheritance/zoo/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inheritance/zoo/project/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inheritance/zoo/project/animal.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inheritance/zoo/project/bear.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inheritance/zoo/project/gorilla.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inheritance/zoo/project/lizard.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inheritance/zoo/project/mammal.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inheritance/zoo/project/reptile.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inheritance/zoo/project/snake.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/SU_OOP_2021.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SU_OOP_2021.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -84,6 +74,7 @@
     <option name="width" value="1400" />
     <option name="height" value="1000" />
   </component>
+  <component name="ProjectId" id="1phjFBWkSwpcIf3uOGXN0iDhG2B" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -123,6 +114,14 @@
       </pane>
       <pane id="Scope" />
     </panes>
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
   </component>
   <component name="RunManager" selected="Python.main">
     <configuration name="child" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -219,12 +218,13 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="60e19b51-0b12-4340-a961-7a5e528a1e94" name="Default Changelist" comment="" />
+      <changelist id="6aa94b3b-3357-4089-b988-ba639210763a" name="Default Changelist" comment="" />
       <created>1614942833854</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
