@@ -28,3 +28,10 @@ class Student:
             self.courses.pop(course_name)
             return "Course has been removed"
         raise Exception("Cannot remove course. Course not found.")
+
+
+if __name__ == '__main__':
+    s = Student('Boris', {'python': ['one', 'two']})
+    s.enroll('python', ['three'], add_course_notes='Y')
+    s.add_notes('python','!!!')
+    print(s.courses)
