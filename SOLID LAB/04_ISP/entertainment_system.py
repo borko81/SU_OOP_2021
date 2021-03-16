@@ -8,22 +8,28 @@
 #     def connect_device_to_power_outlet(self, device): pass
 #
 
-class RcaConector:
+from abc import ABC, abstractmethod
+
+class RcaConector(ABC):
+    @abstractmethod
     def connect_to_device_via_rca_cable(self, device):
         pass
 
 
-class HdmiConnector:
+class HdmiConnector(ABC):
+    @abstractmethod
     def connect_to_device_via_hdmi_cable(self, device):
         pass
 
 
-class EthernetConnector:
+class EthernetConnector(ABC):
+    @abstractmethod
     def connect_to_device_via_ethernet_cable(self, device):
         pass
 
 
-class PowerConnector:
+class PowerConnector(ABC):
+    @abstractmethod
     def connect_device_to_power_outlet(self, device):
         pass
 
