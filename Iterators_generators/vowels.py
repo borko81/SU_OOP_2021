@@ -20,7 +20,6 @@ class vowels:
                 return self.name[temp]
 
 
-
 if __name__ == '__main__':
     my_string = vowels('abcedifuty0o')
     for char in my_string:
