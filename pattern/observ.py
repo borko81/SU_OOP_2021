@@ -40,11 +40,6 @@ class HexView:
         print(f"Hex {subject.name} - {subject.data}")
 
 
-class DecimalViewer:
-    """updates the Decimal viewer"""
-
-    def update(self, subject):
-        print('DecimalViewer: Subject % s has data % d' % (subject.name, subject.data))
 
 
 if __name__ == "__main__":
@@ -53,7 +48,9 @@ if __name__ == "__main__":
     obj1 = Data('Data 1')
     obj2 = Data('Data 2')
 
-    view1 = DecimalViewer()
     view2 = HexView()
 
-    obj1.attach(view1)
+    obj1.attach(view2)
+    print(obj1.data)
+
+    obj1.data = 10
