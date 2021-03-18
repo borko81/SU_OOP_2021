@@ -9,16 +9,16 @@ class dictionary_iter:
         self.keys = list(self.obj.keys())
 
     def __iter__(self):
-        return self
+        return iter(self.obj.items())
 
-    def __next__(self):
-        while 1:
-            if self.len_obj == len(self.obj):
-                raise StopIteration()
-            key = self.keys[self.len_obj]
-            temp = (key, self.obj[key])
-            self.len_obj += 1
-            return temp
+    # def __next__(self):
+    #     while 1:
+    #         if self.len_obj == len(self.obj):
+    #             raise StopIteration()
+    #         key = self.keys[self.len_obj]
+    #         temp = (key, self.obj[key])
+    #         self.len_obj += 1
+    #         return temp
 
 
 if __name__ == '__main__':
