@@ -3,6 +3,7 @@ import unittest
 from project.battle_field import BattleField
 from project.card.card_repository import CardRepository
 from project.card.magic_card import MagicCard
+from project.card.trap_card import TrapCard
 from project.player.advanced import Advanced
 from project.player.beginner import Beginner
 
@@ -47,6 +48,18 @@ class TestBattleField(unittest.TestCase):
 
         self.assertEqual(p1.health, 165)
         self.assertEqual(p2.health, 295)
+
+    def test_damage_and_health_with_cards_one_die(self):
+        p1 = Beginner('One')
+        p2 = Advanced('Two')
+        p1.card_repository.add(TrapCard('magic1'))
+        p1.card_repository.add(TrapCard('magic2'))
+        p1.card_repository.add(TrapCard('magic3'))
+        p2.card_repository.add(MagicCard('magic2'))
+        with self.assertRaises(ValueError) as ex:
+            self.bf.fight(p1, p2)
+        self.assertEqual(str(ex.exception), "Player's health bonus cannot be less than zero.")
+
 
 
 if __name__ == '__main__':
