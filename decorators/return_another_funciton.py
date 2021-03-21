@@ -19,4 +19,17 @@ def number_increment(numbers):
     return list(increase())
 
 
-print(number_increment([1, 2, 3]))
+def result_to_uppercase(function):
+    def inside(msg):
+        result = function(msg)
+        return result.upper()
+
+    return inside
+
+
+@result_to_uppercase
+def show_msg(message):
+    return message
+
+
+
