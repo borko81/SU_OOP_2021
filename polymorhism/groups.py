@@ -10,7 +10,7 @@ class Person:
     def __repr__(self):
         return f"{self.name} {self.surname}"
 
-    def __str____(self):
+    def __str__(self):
         return f"{self.name} {self.surname}"
 
 
