@@ -28,9 +28,10 @@ class System:
                 temp.install(e)
                 System._software.append(e)
             except Exception as e:
-                return e
+                return str(e)
         except IndexError:
             return "Hardware does not exist"
+
 
     @staticmethod
     def register_light_software(hardware_name: str, name:str, capacity_consumption:int, memory_consumption:int):
@@ -39,21 +40,23 @@ class System:
             e = LightSoftware(name, capacity_consumption, memory_consumption)
             try:
                 temp.install(e)
-                System._software.append(e)
             except Exception as e:
-                return e
+                return str(e)
+            System._software.append(e)
         except IndexError:
             return "Hardware does not exist"
+
 
     @staticmethod
     def release_software_component(hardware_name:str, software_name:str):
         try:
             h = [name for name in System._hardware if name.name == hardware_name][0]
             s = [name for name in System._software if name.name == software_name][0]
+            h.uninstall(s)
+            System._software.remove(s)
         except IndexError:
             return "Some of the components do not exist"
-        else:
-            h.uninstall(s)
+
 
     @staticmethod
     def analyze():

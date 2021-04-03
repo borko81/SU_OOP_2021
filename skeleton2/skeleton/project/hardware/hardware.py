@@ -16,7 +16,8 @@ class Hardware:
             raise Exception("Software cannot be installed")
 
     def uninstall(self, software):
-        self.software_components.remove(software)
+        if software in self.software_components:
+            self.software_components.remove(software)
 
     def get_light_software_components_count(self):
         return len([s for s in self.software_components if s.type == "Light"])
