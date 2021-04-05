@@ -4,3 +4,6 @@ class Child:
         self.food_cost = food_cost
         self.toys_cost = toys_cost
         self.cost = food_cost + sum(toys_cost)
+
+    def get_monthly_expense(self):
+        return self.cost * 30
