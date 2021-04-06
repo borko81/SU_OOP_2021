@@ -12,29 +12,31 @@ class Player(ABC):
 
     @property
     def username(self):
-        return self._username
+        return self.__username
 
     @username.setter
     def username(self, value):
         if not value:
-            raise ValueError("Player's cannot be an empty string.")
-        self._username = value
+            raise ValueError("Player's username cannot be an empty string.")
+        self.__username = value
 
     @property
     def health(self):
-        return self._health
+        return self.__health
 
     @health.setter
     def health(self, value):
         if value < 0:
-            raise ValueError("Player's health bonus cannot be less than zero. ")
-        self._health = value
+            raise ValueError("Player's health bonus cannot be less than zero.")
+        self.__health = value
 
     @property
     def is_dead(self):
-        return self.health < 0
+        return self.health <= 0
 
     def take_damage(self, damage_points: int):
         if damage_points < 0:
             raise ValueError("Damage points cannot be less than zero.")
         self.health -= damage_points
+
+
