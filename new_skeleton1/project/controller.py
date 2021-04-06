@@ -7,7 +7,7 @@ from project.player.beginner import Beginner
 from project.player.player_repository import PlayerRepository
 
 
-class ContollerClass:
+class Controller:
     def __init__(self):
         self.player_repository = PlayerRepository()
         self.card_repository = CardRepository()
@@ -26,9 +26,9 @@ class ContollerClass:
             card = MagicCard(name)
             self.card_repository.cards.append(card)
         else:
-            card= TrapCard(name)
+            card = TrapCard(name)
             self.card_repository.cards.append(card)
-        return f"Successfully added card of type {type} Card with name: {name}"
+        return f"Successfully added card of type {type} with name: {name}"
 
     def add_player_card(self, username: str, card_name: str):
         user = self.player_repository.find(username)
