@@ -7,7 +7,7 @@ from project.player.beginner import Beginner
 from project.player.player_repository import PlayerRepository
 
 
-class ContollerClass:
+class Controller:
     def __init__(self):
         self.player_repository = PlayerRepository()
         self.card_repository = CardRepository()
