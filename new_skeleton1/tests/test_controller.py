@@ -34,6 +34,7 @@ class TestController(unittest.TestCase):
         self.assertEqual(trap_card, "Successfully added card of type TrapCard with name: T")
         self.assertEqual(len(self.c.card_repository.cards), 2)
         self.assertEqual(self.c.card_repository.cards[1].name, 'T')
+        self.assertEqual(self.c.card_repository.count, 1)
 
     def test_add_player_card(self):
         self.c.add_player('Beginner', 'B')
@@ -41,6 +42,7 @@ class TestController(unittest.TestCase):
         actual = self.c.add_player_card('B', 'T')
         self.assertEqual(actual, "Successfully added card: T to user: B")
         self.assertEqual(len(self.c.player_repository.players[0].card_repository.cards), 1)
+
 
     def test_find(self):
         self.c.add_player('Advanced', 'A1')
