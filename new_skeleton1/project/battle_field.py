@@ -1,3 +1,5 @@
+from project.player.advanced import Advanced
+from project.player.beginner import Beginner
 from project.player.player import Player
 
 
@@ -29,3 +31,10 @@ class BattleField:
             if enemy.is_dead or attacker.is_dead:
                 return
             attacker.take_damage(c.damage_points)
+
+
+if __name__ == '__main__':
+    b = BattleField()
+    a = Beginner('A')
+    e = Advanced('AA')
+    print(type(b.fight).__name__)
